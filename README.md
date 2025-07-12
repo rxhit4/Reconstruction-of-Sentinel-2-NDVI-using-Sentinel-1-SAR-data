@@ -1,7 +1,7 @@
 
 # Reconstruction of Sentinel-2 NDVI using Sentinel-1 (SAR) Data
 
-This repository contains the code and configuration used to reconstruct cloud-contaminated NDVI time series by integrating Sentinel-1 Synthetic Aperture Radar (SAR) data with cloud-free Sentinel-2 optical imagery. The entire implementation is conducted within the Google Earth Engine (GEE) platform, allowing scalable and efficient restoration of vegetation indices, particularly in monsoon-affected regions.
+This repository contains the code and configuration for reconstructing cloud-contaminated NDVI from Sentinel-2 satellite's optical imagery by integrating Sentinel-1 satellite's Synthetic Aperture Radar (SAR) data. The entire implementation is conducted within the Google Earth Engine (GEE) platform, allowing scalable and efficient restoration of vegetation indices, particularly in monsoon-affected regions.
 
 ---
 
@@ -48,7 +48,7 @@ This partitioning enables the **Multiple Linear Regression (MLR)** model to capt
 
 ---
 
-## ⚙️ Methodology for NDVI Restoration
+## Methodology for NDVI Restoration
 
 ![Fig 3: NDVI Reconstruction Workflow](images/fig_workflow.png)  
 *Fig 3: Process workflow for SAR-optical NDVI reconstruction*
@@ -152,7 +152,7 @@ python sar_optical_ndvi_reconstruction.py
 The outputs will be saved to your Google Drive under the folder name specified by `PROJECT_TITLE` in your configuration file.
 
 
-## ✍️ Author & Acknowledgements
+## Author & Acknowledgements
 
 **Author**: Rohit Kumar Sarkar  
 **Institute**: Techno India University, Kolkata  
