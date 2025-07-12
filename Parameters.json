@@ -1,0 +1,20 @@
+{
+
+    "AOI_NAME": "North Qld",
+    "PROJECT_TITLE": "Cairns_S2_test",
+    "GEE_USERNAME": "ee-rohitsarkarnew2004",
+    "EXPORT_INPUT": false,
+    "EXPORT_RLR": false,
+    "EXPORT_PCA": true,
+    "CLEAR_EXISTING": true,
+    "OPTICAL_MISSION": "S2",
+    "START_DATE": "2020-01-01",
+    "END_DATE": "2025-01-01",
+    "PATH_MATADATA": null,
+    "TRAIN_TEST_SPLIT": 0.6,
+    "VAL_SPLIT": 0.2,
+    "RANDOM_SPLIT": true,
+    "PCA_SMOOTH": true,
+    "PCA_COMPONENT_RATIO": 0.1,
+    "STD_CLOUD_THRESHOLD": 50
+}
