@@ -70,7 +70,7 @@ This partitioning enables the **Multiple Linear Regression (MLR)** model to capt
    - Pixel-wise linear regression using SAR predictors
 
 5. **Post-Processing**  
-   - Savitzky-Golay smoothing  
+   - PCA smoothing  
    - Calibration to match observed NDVI range  
    - Gap filling in NDVI time series  
 
