@@ -5,7 +5,7 @@ This repository contains the code and configuration used to reconstruct cloud-co
 
 ---
 
-## 📍 Study Area: Nashik District, Maharashtra
+## Study Area: Nashik District, Maharashtra
 
 Nashik is a key agricultural zone in India known for grapes, sugarcane, onions, and soybeans. The area experiences heavy monsoon rains that hinder optical satellite observations. Its diverse cropping systems and cloud-prone climate make it ideal for evaluating SAR-optical NDVI fusion strategies.
 
@@ -21,7 +21,7 @@ Nashik is a key agricultural zone in India known for grapes, sugarcane, onions, 
 
 ---
 
-## 🛰️ Satellite Datasets Used
+## Satellite Datasets Used
 
 ### Sentinel-1 (SAR)
 - Mode: Interferometric Wide (IW) Swath
@@ -36,7 +36,7 @@ Nashik is a key agricultural zone in India known for grapes, sugarcane, onions, 
 
 ---
 
-## 🧠 Spatio-Temporal Feature Partitioning
+## Spatio-Temporal Feature Partitioning
 
 SAR predictors are decomposed into:
 - Global temporal mean
@@ -76,7 +76,7 @@ This partitioning enables the **Multiple Linear Regression (MLR)** model to capt
 
 ---
 
-## 📊 Results & Discussion
+## Results & Discussion
 
 - The approach successfully reconstructs NDVI under frequent cloud contamination
 - Vegetation cycles (growth, senescence) are preserved
@@ -92,7 +92,7 @@ This partitioning enables the **Multiple Linear Regression (MLR)** model to capt
 
 ---
 
-## ✅ Model Validation
+## Model Validation
 
 ### Data Split:
 - **Training**: 70% clear-sky data  
@@ -103,13 +103,13 @@ This partitioning enables the **Multiple Linear Regression (MLR)** model to capt
 | Metric     | Training | Testing | Validation |
 |------------|----------|---------|------------|
 | MAE        | 0.061    | 0.074   | 0.065      |
-| CC         | 0.89     | 0.87    | 0.91       |
+| CC         | 0.78     | 0.80    | 0.82      |
 
 The results show strong temporal consistency and spatial fidelity in vegetation behavior, confirming the effectiveness of SAR-optical regression fusion.
 
 ---
 
-## 🧾 Conclusion
+## Conclusion
 
 This NDVI reconstruction framework provides a scalable and practical solution for gap-filling in vegetation monitoring. By leveraging SAR data and spatio-temporal modeling, it overcomes limitations of cloud-obstructed optical datasets, especially in monsoon climates.
 
@@ -117,34 +117,29 @@ The approach generalizes well, is easily scalable to large regions, and can supp
 
 ---
 
-## 🚀 Installation
+## Installation
 
-### 1️⃣ Create a Google Earth Engine account
+### 1️. Create a Google Earth Engine account
 Sign up at [Google Earth Engine](https://earthengine.google.com/) and verify access.
 
-### 2️⃣ Set up Python environment (PyCharm recommended)
+### 2️. Set up Python environment (PyCharm recommended)
 Create a new Python project in PyCharm or any IDE of your choice.
 
-### 3️⃣ Install required libraries and dependencies
+### 3️. Install required libraries and dependencies
 Open terminal and run:
 ```bash
 pip install earthengine-api geopandas pandas shapely json
 ```
 
-### 4️⃣ Authenticate Earth Engine
+### 4️. Authenticate Earth Engine
 In Python, run:
 ```python
 import ee
 ee.Authenticate()
 ee.Initialize()
-```
 
-### 5️⃣ Import required Python modules
-Make sure the following modules are available: `earthengine-api`, `geopandas`, `pandas`, `shapely`, `json`.
 
----
-
-## 📖 Usage
+## Usage
 
 1. Update the configuration file (`Parameters.json`) with your **Area of Interest (AOI)**, **date range**, and **project title**.  
 
@@ -156,21 +151,11 @@ python sar_optical_ndvi_reconstruction.py
 
 The outputs will be saved to your Google Drive under the folder name specified by `PROJECT_TITLE` in your configuration file.
 
----
-
-## 📚 References
-
-1. Xia, Y. et al., 2019. *Cloud Removal of Optical Remote Sensing Imagery with Multitemporal Sar-Optical Data Using X-Mtgan.* IGARSS.
-2. Yang, K. et al., 2022. *Reconstruction of Sentinel-2 image time series using Google Earth Engine.* Remote Sens.
-3. Zeng, C. et al., 2013. *Recovering missing pixels for Landsat ETM+ SLC-off imagery using multi-temporal regression analysis.* RSE.
-4. Zhang, Q. et al., 2020. *Thick cloud and shadow removal using spatio-temporal patch group deep learning.* ISPRS J. Photogramm. Remote Sens.
-
----
 
 ## ✍️ Author & Acknowledgements
 
 **Author**: Rohit Kumar Sarkar  
 **Institute**: Techno India University, Kolkata  
-**Guide**: Dr. Niraj Priyadarshi, Sci/Engr-SF, RRSC-East, NRSC/ISRO  
+**Guide**: Dr. Niraj Priyadarshi, Sci/Engr-SF, RRSC-East, NRSC, Indian Space Research Organisation (ISRO)  
 
 > This work would not have been possible without the insightful guidance, support, and encouragement of Dr. Niraj Priyadarshi.
