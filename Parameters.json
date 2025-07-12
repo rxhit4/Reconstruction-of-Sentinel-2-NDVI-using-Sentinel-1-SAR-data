@@ -1,7 +1,7 @@
 {
 
-    "AOI_NAME": "North Qld",
-    "PROJECT_TITLE": "Cairns_S2_test",
+    "AOI_NAME": "Nashik District",
+    "PROJECT_TITLE": "Reconstruction of S2 NDVI using S1 data",
     "GEE_USERNAME": "ee-rohitsarkarnew2004",
     "EXPORT_INPUT": false,
     "EXPORT_RLR": false,
