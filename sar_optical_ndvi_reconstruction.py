@@ -20,7 +20,7 @@ def main():
     ==============================
     """
     cfg = json.load(open(r"..\config\Parameters.json", 'r'))
-    AOI_PATH = r"C:\Users\Rohit Btech\Downloads\SAR-OPT_fusion_GEE-main\SAR-OPT_fusion_GEE-main\AOI\Nashik_patch2.shp"
+    AOI_PATH = r"C:\Users\Rohit Btech\Downloads\AOI\Nashik_patch2.shp"
     AOIs = gpd.read_file(AOI_PATH)
 
     """
